@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resume</title>
+
+	<!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+
+	<style type="text/css">
+
+		.special::before{
+			content: "\21d2";
+			font-weight: bold;
+		}
+
+		@media print{
+			.screen-only{
+				display: none;
+			}
+		}
+
+		table {
+			border: 3px solid black;
+			border-collapse: collapse;
+			width: 70%;
+		}
+
+		th,td{
+			border: 1px solid black;
+			padding: 5px;
+			text-align: center;
+		}
+
+		th{
+			background-color: lightgrey;
+		}
+		
+
+		#content img{
+    		position: absolute;
+		    top: 30px;
+		    right: 30px;
+		    display: block;
+		    height: 210px;
+		    width: 210px;
+		    /*background: url(TRbanner.gif) no-repeat;*/
+		    text-indent: -999em;
+		    text-decoration: none;
+		    
+		}
+
+		#border{
+			border: 3px solid black;
+			/*height: 248px;*/
+			/*width: 351px;*/
+			padding: 10px;
+			background-color:lightgrey;
+			font-family: Times New Roman,sans-serif;
+			font-size: 20px;
+			
+		}
+
+		.bold{
+			font-weight: bold;
+			text-decoration: underline;
+		}
+		
+
+		ol{
+		  	list-style-type: none;
+			counter-reset: item;
+			margin: 0;
+			padding: 0;
+		}
+
+		ol > li {
+		  	display: table;
+		  	counter-increment: item;
+		  	margin-bottom: 0.6em;
+		}
+
+		ol > li:before {
+		  	content: counters(item, ".") ". ";
+		  	display: table-cell;
+		  	padding-right: 0.6em;    
+		}
+
+		li ol > li {
+		  	margin: 0;
+		}
+
+		li ol > li:before {
+		  	content: counters(item, ".") " ";
+		}
+
+	</style>
+
+</head>
+<body>
+	<div id="border">
+		
+		<p><span class="bold"><h1>Deepthi S</h1></span></p>
+		
+		<div>
+			Information and Communication Technology,
+		</div>
+		
+		<div>
+			SASTRA Deemed to be University,
+		</div>
+		
+		<div>
+			Thanjavur.
+		</div>
+		
+		<div>
+			<span class="bold">Phone</span> : +91 - 6379489206
+		</div>
+
+		<div>
+		<span class="bold">Email</span> :  
+		<a href = "mailto:skdeepthi123@gmail.com?subject = Feedback&body = Message"> skdeepthi123@gmail.com
+		</a>
+		</div>
+
+		<div id="content">
+		    <img src="pic.jpg" class="pic"/>
+		</div>
+
+		<hr style="border: 1px dashed black;" />
+
+		<div>
+			<span class="bold"><h2>Academic Qualification:</h2></span>
+		</div>
+
+		<table>
+			<tr>						
+				<th>SNo</th>	
+				<th>Program</th>
+				<th>Institution</th>
+				<th>CGPA/%</th>
+				<th>Completion</th>
+			</tr>
+			<tr>
+				<td>1</td>			
+				<td>B.Tech  (Information and Communication Technology)</td>
+				<td>SASTRA Deemed to be University, Thanjavur.</td>
+				<td>7.6857</td>
+				<td>2018-Present</td>
+			</tr>
+			<tr>
+				<td>2</td>			
+				<td>XII </td>
+				<td>Velammal Vidhayashram (CBSE)</td>
+				<td>86% </td>
+				<td>2017-2018 </td>
+			</tr>
+			<tr>
+				<td>3</td>			
+				<td>X</td>
+				<td>Velammal Vidhayashram (CBSE)</td>
+				<td>10</td>
+				<td>2015-2016</td>
+			</tr>
+		</table>
+
+		<div>
+			<span class="bold"><h2>Technical Skills:</h2></span>
+		</div>
+
+			<ol>
+				<li class="bold">Programming Languages:</li>
+				<ul>
+					<li>Python</li>
+					<li>Java</li>
+					<li>C++</li>
+					<li>C</li>
+				</ul>
+				<li class="bold">Web Technologies:</li>
+				<ul>
+					<li>Basics of HTML,CSS</li>				
+				</ul>
+				<li class="bold">Others:</li>
+				<ul>
+					<li>Machine learning</li>
+					<li>Data Structures and Algorithms</li>
+					<li>Data Base Management Systems</li>
+					<li>Basics of networking</li>
+					<li>Android Studio</li>
+				</ul>
+			</ol>
+		</li>
+
+		<div>
+			<span class="bold"><h2>Relevant Coursework:</h2></span>
+		</div>
+		<ul>
+			<li>Introduction to Machine Learning – SWAYAM (with Certification)</li>
+			<li>Python for Data Science </li>
+		</ul>
+
+		<div>
+			<span class="bold"><h2>Internships:</h2></span>
+		</div>
+
+		<ol>
+			<li>June’19 – “Social Internship”
+			<ol>
+				<li>Samarpana –  Centre for human service</li>
+				<ul>
+					<li>Improved my Soft skills</li>
+					<li>Learnt that, Confidence and love towards work can bring success </li>
+				</ul>
+			</ol>
+			</li>
+
+			<li>Nov, Dec’19 –  “Industrial Internship” 
+			<ol>
+				<li> Brakes India Pvt Limited</li>
+				<ul>
+					<li>Underwent a 2 weeks internship in Technology Development</li>
+					<li> Worked on a project in the field Special Purpose Machines (SPM),    “Vision Inspection SPM” to inspect the Defects on the Drum Brake. </li>
+					<li>Used Sherlock Software for Vision inspection, EPlan Software for Engineering Drawing, and Labview for HMI.</li>
+				</ul>
+			</ol>
+			</li>
+		</ol>
+
+		<div>
+			<span class="bold"><h2>Relevant Competitions Participated:</h2></span>
+		</div>
+
+		<ul>
+			<li>LaunchPad</li>
+			<div class="special">Daksh’19,by SASTRA Entrepreneurship cell (Ideation)</div>
+			<div class="special">3rd place</div>
+			<li>Codenza</li>
+			<span class="special">SASTRA Daksh ’19, Coding event (Hackathon)</span>
+		</ul>
+
+		<div>
+			<span class="bold"><h2>Other Information:</h2></span>
+		</div>
+
+		<ul>
+			<li>School Level “Athlete” (100m,200m,400m,Long jump, Discus throw)</li>
+			<li>Hobbies: Singing, Dancing, Reading Novels.</li>
+		</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<p class="screen-only">This paragraph wont appear when you print this page</p>
+	</div>	
+</body>
+</html>
