@@ -1,0 +1,102 @@
+
+
+.special::before{
+	content: "\21d2";
+	font-weight: bold;
+}
+
+@media print{
+	.screen-only{
+		display: none;
+	}
+}
+
+table {
+	border: 3px solid black;
+	border-collapse: collapse;
+	width: 70%;
+}
+
+th,td{
+	border: 1px solid black;
+	padding: 5px;
+	text-align: center;
+}
+
+th{
+	background-color: lightgrey;
+}
+
+
+#content img{
+    position: absolute;
+	top: 30px;
+	right: 30px;
+	display: block;
+	height: 210px;
+	width: 210px;
+	/*background: url(TRbanner.gif) no-repeat;*/
+	/*text-indent: -999em;*/
+	text-decoration: none;
+		    
+}
+
+.cpic{
+	/*position: absolute;*/
+	top: 120px;
+	right: 30px;
+	/*display: block;*/
+	height: 310px;
+	width: 210px;
+	text-indent: -990em;
+	text-decoration: none;
+	/*padding: 20px;*/
+	float: right;
+}
+
+#border{
+	border: 3px solid black;
+	/*height: 248px;*/
+	/*width: 351px;*/
+	padding: 10px;
+	background-color:lightgrey;
+	font-family: Times New Roman,sans-serif;
+	font-size: 20px;
+			
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.underline{
+	text-decoration: underline;
+}
+		
+
+ol{
+		 list-style-type: none;
+	counter-reset: item;
+	margin: 0;
+	padding: 0;
+}
+
+ol > li {
+		 display: table;
+		 counter-increment: item;
+		 margin-bottom: 0.6em;
+}
+
+ol > li:before {
+		 content: counters(item, ".") ". ";
+		 display: table-cell;
+		 padding-right: 0.6em;    
+}
+
+li ol > li {
+		 margin: 0;
+}
+
+li ol > li:before {
+		 content: counters(item, ".") " ";
+}
