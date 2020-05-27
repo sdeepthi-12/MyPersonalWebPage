@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Personal Information</title>
+
+	<style type="text/css">
+
+		.special::before{
+			content: "\21d2";
+			font-weight: bold;
+		}
+
+		a{
+			text-decoration:none;
+		}
+
+		a:hover{
+			text-decoration: underline;
+		}
+		
+		#font{
+			font-family: Times New Roman;
+			background-color: lightgrey;
+			border: 3px solid black;
+			padding: 10px;
+		}
+
+		.underline{
+			text-decoration: underline;
+		}
+
+		.bold{
+			font-weight: bold;
+			font-size: 20px
+		}
+
+
+		/*Animation part*/
+		#div1,#div2,#div3,#div4{
+		  width: 120px;
+		  height: 30px;
+		  background-color: lightgrey;
+		  font-weight: bold;
+		  position: relative;
+		  animation: mymove 10s infinite;
+		  font-size: 20px;
+		}
+
+		#div1 {animation-timing-function: linear;width: 90px;}
+		#div2 {animation-timing-function: ease;width: 140px;}
+		#div3 {animation-timing-function: ease-in;}
+		#div4 {animation-timing-function: ease-out;width: 80px;}
+		/*#div5 {animation-timing-function: ease-in-out;}*/
+
+		@keyframes mymove {
+		  from {left: 20px;}
+		  to {left: 300px;}
+		}
+		/*animation part ending*/
+
+
+		/*flexbox*/
+		.container{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.container > div{
+			background-color: lightgrey;
+			font-size: 20px;
+			margin: 20px;
+			/*padding: 10px;*/
+			width: 300px
+		}
+
+		.pic{
+			height: 210px;
+			width: 300px;
+		}
+
+		.hpic{
+			height: 300px;
+			width: 250px;
+		}
+		/*flexbox ending*/
+
+	</style>
+
+</head>
+<body>
+
+<div id="font">
+	<h1 style="text-align: center;">Welcome to my world</h1>
+
+	<h2 class="underline">Lets explore my Life</h2>
+	
+		<div id="div1"><a href="#section1">About Me</a></div>
+		<div id="div2"><a href="#section2">Personal profile</a></div>
+		<div id="div3"><a href="#section3">Acheivements</a></div>
+		<div id="div4"><a href="#section4">Hobbies</a></div>
+	
+
+	<h2 id="section1" class="underline">About Me:</h2>
+
+		<p style="font-size: 20px">I am Deepthi, from Chennai. I've completed my schooling in Velammal Vidhyashram, Chennai and I am currently pursuing my Btech - Information and communication Technology in SASTRA Deemed to be University, Thanjavur.</p>
+		<p style="font-size: 20px">I am quite good at web development and machine learning.
+		I have completed these 2 courses, ML in NPTEL and web Development in edx and developed my own website. 
+		I've also worked on a project regarding Probabilistic neural network under my professor and was a major contributer
+		of the code work in her industrial related project.</p>
+		<p style="font-size: 20px">Speaking about my strenghts, I am solution oriented, determined, and ofcourse a good team player and enjoy working with others.</p>
+		<p style="font-size: 20px">Now coming to my personal family life, I've got 5 members in my family including me, my mom, my dad, my sister, and my grandma. I am proficient in English, Telugu and Tamil.
+		I'm a good dancer and also a singer.I've participated in couple of competitions.I am an Athlete and this not only keeps me fit but also helps me control my emotions at the time required.</p>
+		<p style="font-size: 20px">Tats about me!!!</p>
+	
+
+	<h2 id="section2" class="underline">Personal profile:</h2>
+	<ul>
+		<li><span class="bold"> Date of Birth </span> <span style="margin-left: 5em"></span>: 12th July 2000</li>
+		<li><span class="bold">Father's Name  </span>   <span style="margin-left: 4.2em"></span>: Mr. D Srinivasan</li>
+		<li><span class="bold">Mother's Name  </span>  <span style="margin-left: 3.8em"></span>: Mrs. S Komala</li>
+		<li><span class="bold">Permanent Address  </span>   <span style="margin-left: 1.6em"></span>: No:8, Pachaiyappan Colony,
+			<div style="margin-left: 13em"> Lakshimipuram, Kolathur,</div>
+			<div style="margin-left: 13em"> Chennai-600099</div></li>
+		<li><span class="bold">Strenghts  </span>  <span style="margin-left: 7.0em"></span>: solution oriented, determined, and a good team player and enjoy working
+		<div style="margin-left: 13em">with others</div> </li>
+		<li><span class="bold">Languages Known   </span> <span style="margin-left: 2.2em"></span>: English,Tamil,Telugu</li>
+	</ul>
+
+	<h2 id="section3" class="underline">Acheivements:</h2>
+
+	<ul>
+	<li class="bold">LKG</li>
+		<div class="container">
+			
+			<div><img src="D:\edx-webd\2\project0\certificates\0lkg\IMG_20200515_195544.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\0lkg\IMG_20200515_195516.jpg" class="pic"/></div>
+
+			</div>
+
+	<li class="bold">UKG</li>
+		<div class="container">
+			
+			<div><img src="D:\edx-webd\2\project0\certificates\0ukg\IMG_20200515_195457.jpg" class="pic"/></div>
+
+			</div>
+
+
+	<li class="bold">1st standard</li>
+		<div class="container">
+			
+			<div><img src="D:\edx-webd\2\project0\certificates\1st\IMG_20200515_195428.jpg" class="pic"/></div>
+
+			</div>
+
+	<li class="bold">2nd standard</li>
+		<div class="container">
+			
+			<div><img src="D:\edx-webd\2\project0\certificates\2nd\IMG_20200515_195336.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\2nd\IMG_20200515_195357.jpg" class="pic"/></div>
+
+			</div>
+
+	<li class="bold">3rd standard</li>
+		<div class="container">
+			
+			<div><img src="D:\edx-webd\2\project0\certificates\3rd\IMG_20200515_195319.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\3rd\IMG_20200515_195255.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\3rd\IMG_20200515_195224.jpg" class="pic"/></div>
+
+			</div>
+
+	<li class="bold">4th standard</li>
+		<div class="container">
+			
+			<div><img src="D:\edx-webd\2\project0\certificates\4th\IMG_20200515_194839.jpg" class="hpic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\4th\IMG_20200515_195125.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\4th\IMG_20200515_195203.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\4th\IMG_20200515_195001.jpg" class="hpic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\4th\IMG_20200515_195041.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\4th\IMG_20200515_194922.jpg" class="hpic"/></div>
+			
+
+			</div>
+
+	<li class="bold">5th standard</li>
+		<div class="container">
+			
+			<div><img src="D:\edx-webd\2\project0\certificates\5th\IMG_20200515_194808.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\5th\IMG_20200515_194725.jpg" class="hpic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\5th\IMG_20200515_194652.jpg" class="hpic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\5th\IMG_20200515_194609.jpg" class="pic"/></div>
+
+			</div>
+
+	<li class="bold">6th standard</li>
+		<div class="container">
+			
+			<div><img src="D:\edx-webd\2\project0\certificates\6th\IMG_20200515_194440.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\6th\IMG_20200515_194536.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\6th\IMG_20200515_194404.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\6th\IMG_20200515_194334.jpg" class="pic"/></div>
+
+			</div>
+
+	<li class="bold">7th standard</li>
+		<div class="container">
+			
+			<div><img src="D:\edx-webd\2\project0\certificates\7th\IMG_20200515_194306.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\7th\IMG_20200515_194229.jpg" class="hpic"/></div>
+
+			</div>
+
+	<li class="bold">8th standard</li>
+		<div class="container">
+			
+			<div><img src="D:\edx-webd\2\project0\certificates\8th\IMG_20200515_194151.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\8th\IMG_20200515_194122.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\8th\IMG_20200515_194011.jpg" class="hpic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\8th\IMG_20200515_194057.jpg" class="hpic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\8th\IMG_20200515_193853.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\8th\IMG_20200515_193913.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\8th\IMG_20200515_193814.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\8th\IMG_20200515_193933.jpg" class="pic"/></div>
+
+			</div>
+
+	<li class="bold">9th standard</li>
+		<div class="container">
+		
+			<div><img src="D:\edx-webd\2\project0\certificates\9th\IMG_20200515_193641.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\9th\IMG_20200515_193600.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\9th\IMG_20200515_193329.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\9th\IMG_20200515_193400.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\9th\IMG_20200515_193434.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\9th\IMG_20200515_193457.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\9th\IMG_20200515_193713.jpg" class="pic"/></div>
+
+			</div>
+
+	<li class="bold">10th standard</li>
+		<div class="container">
+			
+			<div><img src="D:\edx-webd\2\project0\certificates\10th\IMG_20200515_193156.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\10th\IMG_20200515_193222.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\10th\IMG_20200515_193535.jpg" class="pic"/></div>
+
+			</div>
+
+	<li class="bold">College</li>
+		<div class="container">
+			
+			<div><img src="D:\edx-webd\2\project0\certificates\clg\p9.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\clg\ml.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\clg\100.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\clg\tcs ion\tcs0.png" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\clg\tcs ion\tcs1.png" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\certificates\clg\IMG_20200519_140757.jpg" class="pic"/></div>
+
+
+		</div>
+
+	</ul>
+
+
+	<h2 id="section4" class="underline">Hobbies:</h2>
+	<ul>
+		<li>Dance:</li>
+		<div class="container">
+			<div><img src="D:\edx-webd\2\project0\hobbies\dance\IMG-20141019-WA0006.jpg" class="hpic"/></div>
+			<div><img src="D:\edx-webd\2\project0\hobbies\dance\DSC_(1670).jpg" class="pic"/></div>
+
+		</div>
+		<li>Coin Collection:</li>
+		<div class="container">
+			<div><img src="D:\edx-webd\2\project0\hobbies\coin collection\IMG_20200515_195903.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\hobbies\coin collection\IMG_20200515_195819.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\hobbies\coin collection\IMG_20200515_195741.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\hobbies\coin collection\IMG_20200515_195929.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\hobbies\coin collection\IMG_20200515_195613.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\hobbies\coin collection\IMG_20200515_195649.jpg" class="pic"/></div>
+
+		</div>
+		<li>Art work:</li>
+		<div class="container">
+			<div><img src="D:\edx-webd\2\project0\hobbies\art works\IMG_20200519_144758.jpg" class="hpic"/></div>
+			<div><img src="D:\edx-webd\2\project0\hobbies\art works\IMG_20200519_153049.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\hobbies\art works\IMG_20200519_144710.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\hobbies\art works\IMG_20200519_144736.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\hobbies\art works\IMG_20200519_144749.jpg" class="pic"/></div>
+			<div><img src="D:\edx-webd\2\project0\hobbies\art works\IMG_20200519_144648.jpg" class="hpic"/></div>
+			<div><img src="D:\edx-webd\2\project0\hobbies\art works\IMG_20200519_144609.jpg" class="hpic"/></div>
+			<div><img src="D:\edx-webd\2\project0\hobbies\art works\IMG_20200519_144452.jpg" class="hpic"/></div>
+
+		</div>
+
+			<li>Keyboard:</li>
+			<div class="container">
+			<div><img src="D:\edx-webd\2\project0\hobbies\keyboard\IMG_20200519_151418.jpg" class="hpic"/></div>			
+			</div>
+
+			<li>My Writings:</li>
+			<div class="container">
+			<div><img src="D:\edx-webd\2\project0\hobbies\my writings\IMG_20200519_145059.jpg" class="hpic"/></div>		
+			<div><img src="D:\edx-webd\2\project0\hobbies\my writings\IMG_20200519_145747.jpg" class="pic"/></div>	
+			</div>
+
+			<li>Speech:</li>
+			<div class="container">
+			<div><img src="D:\edx-webd\2\project0\hobbies\speech\IMG_20200519_145218.jpg" class="hpic"/></div>		
+			</div>
+
+			<li>Singing:</li>
+			
+				<div><a href="https://www.youtube.com/channel/UCfqa0yX5hp1QLtSrV9PSvNg?view_as=subscriber" class="special">Link to my Youtube channel</a></div>
+				
+			
+			
+
+
+
+
+
+
+
+		</div>
+
+	</ul>
+
+
+</div>
+
+</body>
+</html>
