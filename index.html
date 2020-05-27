@@ -3,99 +3,7 @@
 <head>
 	<title>Resume</title>
 
-	<!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
-
-	<style type="text/css">
-
-		.special::before{
-			content: "\21d2";
-			font-weight: bold;
-		}
-
-		@media print{
-			.screen-only{
-				display: none;
-			}
-		}
-
-		table {
-			border: 3px solid black;
-			border-collapse: collapse;
-			width: 70%;
-		}
-
-		th,td{
-			border: 1px solid black;
-			padding: 5px;
-			text-align: center;
-		}
-
-		th{
-			background-color: lightgrey;
-		}
-		
-
-		#content img{
-    		position: absolute;
-		    top: 30px;
-		    right: 30px;
-		    display: block;
-		    height: 210px;
-		    width: 210px;
-		    /*background: url(TRbanner.gif) no-repeat;*/
-		    text-indent: -999em;
-		    text-decoration: none;
-		    
-		}
-
-		#border{
-			border: 3px solid black;
-			/*height: 248px;*/
-			/*width: 351px;*/
-			padding: 10px;
-			background-color:lightgrey;
-			font-family: Times New Roman,sans-serif;
-			font-size: 20px;
-			
-		}
-
-		.bold{
-			font-weight: bold;
-		}
-
-		.underline{
-			text-decoration: underline;
-		}
-		
-
-		ol{
-		  	list-style-type: none;
-			counter-reset: item;
-			margin: 0;
-			padding: 0;
-		}
-
-		ol > li {
-		  	display: table;
-		  	counter-increment: item;
-		  	margin-bottom: 0.6em;
-		}
-
-		ol > li:before {
-		  	content: counters(item, ".") ". ";
-		  	display: table-cell;
-		  	padding-right: 0.6em;    
-		}
-
-		li ol > li {
-		  	margin: 0;
-		}
-
-		li ol > li:before {
-		  	content: counters(item, ".") " ";
-		}
-
-	</style>
+	<link rel="stylesheet" type="text/css" href="indexcss.css">
 
 </head>
 <body>
@@ -127,9 +35,15 @@
 
 		<div id="content">
 		    <img src="pic.jpg" class="pic"/>
-		</div>
+		    
+		</div>		
 
 		<hr style="border: 1px dashed black;" />
+
+		<div class="cpic">
+		    <img src="D:\edx-webd\2\project0\internship\IMG_20200519_140736.jpg" />
+		    <img src="D:\edx-webd\2\project0\internship\IMG_20200519_141125.jpg" />
+		    </div>
 
 		<div>
 			<span class="bold underline"><h2>Academic Qualification:</h2></span>
@@ -169,6 +83,7 @@
 		<div>
 			<span class="bold underline"><h2>Technical Skills:</h2></span>
 		</div>
+		<img src="D:\edx-webd\2\project0\certificates\clg\ml.jpg" style="float: right;height: 300px;width: 420px;padding: 10px;">
 
 			<ol>
 				<li class="bold">Programming Languages:</li>
@@ -193,30 +108,42 @@
 			</ol>
 		</li>
 
+
 		<div>
 			<span class="bold underline"><h2>Relevant Coursework:</h2></span>
 		</div>
+
 		<ul>
 			<li>Introduction to Machine Learning – SWAYAM (with Certification)</li>
 			<li>Python for Data Science </li>
 		</ul>
 
+		<img src="D:\edx-webd\2\project0\internship\collage.jpg" style="float: right;height: 300px;width: 420px;padding: 10px;">
+
 		<div>
 			<span class="bold underline"><h2>Internships:</h2></span>
 		</div>
 
+
 		<ol>
 			<li >June’19 – “Social Internship”
+
+
 			<ol>
 				<li class="bold underline">Samarpana –  Centre for human service</li>
 				<ul>
 					<li>Improved my Soft skills</li>
 					<li>Learnt that, Confidence and love towards work can bring success </li>
+
 				</ul>
+
+				
+
 			</ol>
 			</li>
 
 			<li>Nov, Dec’19 –  “Industrial Internship” 
+
 			<ol>
 				<li class="bold underline"> Brakes India Pvt Limited</li>
 				<ul>
@@ -224,6 +151,8 @@
 					<li> Worked on a project in the field Special Purpose Machines (SPM),    “Vision Inspection SPM” to inspect the Defects on the Drum Brake. </li>
 					<li>Used Sherlock Software for Vision inspection, EPlan Software for Engineering Drawing, and Labview for HMI.</li>
 				</ul>
+
+
 			</ol>
 			</li>
 		</ol>
@@ -232,12 +161,18 @@
 			<span class="bold underline"><h2>Relevant Competitions Participated:</h2></span>
 		</div>
 
+		<img src="D:\edx-webd\2\project0\certificates\clg\collage0.jpg" style="float: right;height: 300px;width: 850px;padding: 10px;">
+
 		<ul>
 			<li >LaunchPad</li>
 			<div class="special">Daksh’19,by SASTRA Entrepreneurship cell (Ideation)</div>
 			<div class="special">3rd place</div>
 			<li>Codenza</li>
 			<span class="special">SASTRA Daksh ’19, Coding event (Hackathon)</span>
+			<li>Hackathon</li>
+			<span class="special">SASTRA Daksh ’20, Smart Finance Hackathon</span>
+			<div class="special">Developed an Application for offline payments using android studio</div>
+			
 		</ul>
 
 		<div>
@@ -246,7 +181,7 @@
 
 		<ul>
 			<li>School Level “Athlete” (100m,200m,400m,Long jump, Discus throw)</li>
-			<li>Hobbies: Singing, Dancing, Reading Novels.</li>
+			<li>Hobbies: Singing, Dancing, Reading Novels, Coin Collection.</li>
 		</ul>
 
 
@@ -279,7 +214,7 @@
 
 		<hr style="border: 1px dashed black;" />
 
-		<div class="special" ><a href="#"> Click Here for Personal Information</a></div>
+		<div class="special" ><a href="D:\edx-webd\2\project0\personal.html"> Click Here for Personal Information</a></div>
 
 		<!-- <p class="screen-only">This paragraph wont appear when you print this page</p> -->
 	</div>	
